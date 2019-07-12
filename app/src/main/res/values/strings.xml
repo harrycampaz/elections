@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Votaciones</string>
+    <string name="title_activity_coordinador">Coordinadores</string>
+    <string name="title_activity_candidato">Candidatos</string>
+
+    <string name="title_activity_agregar_candidato">Agregar Candidatos</string>
+    <string name="title_activity_agregar_coordinadores">Agregar Coordinadores</string>
+    <string name="title_activity_agregar_lider">Agregar Lider</string>
+    <string name="title_activity_lider">Lideres</string>
+    <string name="title_activity_votante">Votante</string>
+    <string name="title_activity_ver_por_coodinador">VerPorCoodinadorActivity</string>
+</resources>

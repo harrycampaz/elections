@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.harrycampaz.votantes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.VerPorLiderActivity"
+            android:label="@string/title_activity_ver_por_coodinador"
+            android:parentActivityName=".activities.LiderActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.harrycampaz.votantes.activities.LiderActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.VerPorCoodinadorActivity"
+            android:label="@string/title_activity_ver_por_coodinador"
+            android:parentActivityName=".activities.CoordinadorActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.harrycampaz.votantes.activities.CoordinadorActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.VerPorVotanteActivity"
+            android:label="@string/title_activity_ver_por_coodinador"
+            android:parentActivityName=".activities.LiderActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.harrycampaz.votantes.activities.LiderActivity" />
+        </activity>
+        <activity android:name=".activities.AgregarVotanteActivity" />
+        <activity
+            android:name=".activities.VotanteActivity"
+            android:label="@string/title_activity_votante"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.harrycampaz.votantes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AgregarLiderActivity"
+            android:label="@string/title_activity_agregar_lider" />
+        <activity
+            android:name=".activities.LiderActivity"
+            android:label="@string/title_activity_lider"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.harrycampaz.votantes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AgregarCoordinadorActivity"
+            android:label="@string/title_activity_agregar_coordinadores" />
+        <activity
+            android:name=".activities.CoordinadorActivity"
+            android:label="@string/title_activity_coordinador"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.harrycampaz.votantes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CandidatoActivity"
+            android:label="@string/title_activity_candidato"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.harrycampaz.votantes.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AgregarCandidatoActivity"
+            android:label="@string/title_activity_agregar_candidato" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
